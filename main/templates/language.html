@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="about-section">
+    <h1 class="main-page-title">{% trans "Hungarian Language (Magyar)" %}</h1>
+
+    <div class="language-grid">
+        
+        <!-- Alphabet Card -->
+        <div class="language-card">
+            <h3>{% trans "The Alphabet" %}</h3>
+            <p class="green-cursive-text alphabet-text">
+                {% trans "A, Á, B, C, Cs, D, Dz, Dzs, E, É, F, G, Gy, H, I, Í, J, K, L, Ly, M, N, Ny, O, Ó, Ö, Ő, P, R, S, Sz, T, Ty, U, Ú, Ü, Ű, V, Z, Zs" %}
+            </p>
+            <p class="green-cursive-text vowel-highlight">
+                {% trans "Vowels: á, é, í, ó, ö, ő, ú, ü, ű" %}
+            </p>
+        </div>
+
+        <!-- Numbers Card -->
+        <div class="language-card">
+            <h3>{% trans "Numbers (0-10)" %}</h3>
+            <p class="green-cursive-text vocab-text">
+                {% trans "0: nulla • 1: egy • 2: kettő • 3: három • 4: négy • 5: öt" %}
+            </p>
+            <p class="green-cursive-text vocab-text">
+                {% trans "6: hat • 7: hét • 8: nyolc • 9: kilenc • 10: tíz" %}
+            </p>
+        </div>
+
+        <!-- Vocabulary Card -->
+        <div class="language-card">
+            <h3>{% trans "Essential Words" %}</h3>
+            <p class="green-cursive-text vocab-text">
+                {% trans "Family: Család • Mother: Anya • Father: Apa • Job: Munka" %}
+            </p>
+            <p class="green-cursive-text vocab-text">
+                {% trans "Car: Autó • Train: Vonat • Bridge: Híd • Food: Étel" %}
+            </p>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

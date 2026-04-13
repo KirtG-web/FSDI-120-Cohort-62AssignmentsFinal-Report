@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="about-section">
+    <h2 class="main-page-title">{% trans "Holidays & Traditions" %}</h2>
+
+    <p class="green-cursive-text text-center">
+        {% trans "Hungary has many rich and meaningful holidays that reflect its culture, history, and traditions." %}
+    </p>
+
+    <!-- 2-Column Grid -->
+    <div class="holiday-grid">
+
+        <!-- Card 1 -->
+        <div class="holiday-card">
+            <img src="{% static 'images/christmas.jpg' %}" alt="Christmas">
+            <div class="card-content">
+                <h3>{% trans "Christmas" %}</h3>
+                <p>{% trans "A time for family gatherings, traditional foods, and festive celebrations across Hungary." %}</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="holiday-card">
+            <img src="{% static 'images/easter.jpg' %}" alt="Easter">
+            <div class="card-content">
+                <h3>{% trans "Easter" %}</h3>
+                <p>{% trans "Celebrated with unique traditions like 'watering' and colorful folk customs." %}</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="holiday-card">
+            <img src="{% static 'images/st_stephens_day.jpg' %}" alt="St. Stephen’s Day">
+            <div class="card-content">
+                <h3>{% trans "St. Stephen’s Day" %}</h3>
+                <p>{% trans "A national holiday celebrating Hungary’s founding with fireworks and celebrations." %}</p>
+            </div>
+        </div>
+
+          <!-- Holiday 4: Name Days -->
+        <div class="holiday-card">
+            <img src="{% static 'images/name days.jpg' %}" alt="{% trans 'Hungarian Name Days' %}">
+            <div class="card-content">
+                <h3>{% trans "Name Days" %}</h3>
+                <p>{% trans "In Hungary, name days are celebrated almost as much as birthdays, with each name assigned to a specific day of the year." %}</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}  <!-- Add this line here -->
+
+{% block content %}
+<section class="about-section">
+    <h2 class="main-food-title">{% trans "Hungarian Food" %}</h2>
+
+    <div class="food-grid">
+        
+        <!-- Card 1: Gulyás -->
+        <div class="food-card">
+            <h3>{% trans "Gulyás (Goulash)" %}</h3>
+            <img src="{% static 'images/goulash.jpg' %}" alt="Gulyás">
+            <p>{% trans "A hearty stew made with beef, vegetables, and vibrant paprika." %}</p>
+        </div>
+
+        <!-- Card 2: Pörkölt -->
+        <div class="food-card">
+            <h3>{% trans "Pörkölt" %}</h3>
+            <img src="{% static 'images/porkolt.jpg' %}" alt="Pörkölt">
+            <p>{% trans "A savory, thick stew slow-cooked with onions and roasted meats." %}</p>
+        </div>
+
+        <!-- Card 3: Lángos -->
+        <div class="food-card">
+            <h3>{% trans "Lángos" %}</h3>
+            <img src="{% static 'images/langos.jpg' %}" alt="Lángos">
+            <p>{% trans "Fried dough topped with garlic, sour cream, and grated cheese." %}</p>
+        </div>
+
+        <!-- Card 4: Csirke Paprikás -->
+        <div class="food-card">
+            <h3>{% trans "Csirke Paprikás" %}</h3>
+            <img src="{% static 'images/Csirke Paprikás.jpg' %}" alt="Csirke Paprikás">
+            <p>{% trans "Creamy chicken simmered in a rich, flavorful paprika sauce." %}</p>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

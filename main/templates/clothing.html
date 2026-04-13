@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="clothing-section about-section">
+
+    <h1>{% trans "Traditional Hungarian Clothing" %}</h1>
+
+    <!-- Updated class to force green text -->
+    <p class="clothing-intro green-cursive-text">
+        {% trans "Hungarian traditional clothing reflects the rich cultural heritage of different regions. Embroidery, patterns, and colors vary widely, often showing a family or village’s history and identity." %}
+    </p>
+
+    <div class="clothing-main-gallery">
+        <img src="{% static 'images/clothing.jpg' %}" alt="{% trans 'Boy and Girl' %}">
+        <img src="{% static 'images/dance.jpg' %}" alt="{% trans 'Dancing' %}">
+        <img src="{% static 'images/download (4).jpg' %}" alt="{% trans 'Family' %}">
+    </div>
+
+    <div class="clothing-details">
+
+        <div class="clothing-item">
+            <h3>{% trans "Folk Costumes" %}</h3>
+            <img src="{% static 'images/download (9).jpg' %}" alt="{% trans 'Folk Costume' %}" class="featured-item-img">
+            <p class="green-cursive-text">
+                {% trans "These are often worn during festivals, weddings, and national celebrations. Women wear embroidered blouses and skirts, while men wear vests and trousers adorned with local patterns." %}
+            </p>
+        </div>
+
+        <div class="clothing-item">
+            <h3>{% trans "Accessories" %}</h3>
+            <div class="accessory-grid">
+                <div class="acc-card">
+                    <img src="{% static 'images/download (5).jpg' %}" alt="{% trans 'Head Covering' %}">
+                    <p>{% trans "Head Covering" %}</p>
+                </div>
+                <div class="acc-card">
+                    <img src="{% static 'images/download (6).jpg' %}" alt="{% trans 'Traditional Hat' %}">
+                    <p>{% trans "Traditional Hat" %}</p>
+                </div>
+                <div class="acc-card">
+                    <img src="{% static 'images/download (7).jpg' %}" alt="{% trans 'Soldier Hat' %}">
+                    <p>{% trans "Soldier Hat" %}</p>
+                </div>
+                <div class="acc-card">
+                    <img src="{% static 'images/download (10).jpg' %}" alt="{% trans 'Scarf' %}">
+                    <p>{% trans "Traditional Scarf" %}</p>
+                </div>
+                <div class="acc-card">
+                    <img src="{% static 'images/download (11).jpg' %}" alt="{% trans 'Male Hat' %}">
+                    <p>{% trans "Hungarian Male Hat" %}</p>
+                </div>
+                <div class="acc-card">
+                    <img src="{% static 'images/download (12).jpg' %}" alt="{% trans 'Modern Hat' %}">
+                    <p>{% trans "Modern Hat" %}</p>
+                </div>
+                <div class="acc-card">
+                    <img src="{% static 'images/download.jpg' %}" alt="{% trans 'Female Hat' %}">
+                    
+                    <p>{% trans "Female Traditional Hat" %}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clothing-item">
+            <h3>{% trans "Regional Variations" %}</h3>
+            <p class="green-cursive-text">
+                {% trans "Each region has unique designs and colors, representing the local heritage and community traditions." %}
+            </p>
+            <a href="{% url 'culture' %}" class="culture-link">{% trans "Explore Culture & Traditions" %}</a>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

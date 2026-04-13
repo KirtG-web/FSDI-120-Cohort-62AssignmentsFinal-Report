@@ -1,0 +1,1040 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-12 00:05-0500\n"
+"PO-Revision-Date: 2026-03-24\n"
+"Last-Translator: \n"
+"Language-Team: Hungarian\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# --- ABOUT ---
+#: .\main\templates\about.html:7
+#, fuzzy
+#| msgid "About Hungary"
+msgid "Facts about Hungary"
+msgstr "Magyarországról"
+
+# --- ABOUT ---
+#: .\main\templates\about.html:8
+#, fuzzy
+#| msgid "About Hungary"
+msgid "Map of Hungary"
+msgstr "Magyarországról"
+
+#: .\main\templates\about.html:11
+msgid "Official Name: Hungary"
+msgstr "Hivatalos név: Magyarország"
+
+#: .\main\templates\about.html:12
+msgid "Capital: Budapest"
+msgstr "Főváros: Budapest"
+
+#: .\main\templates\about.html:13
+msgid "Population: 9,825,704"
+msgstr "Népesség: 9 825 704"
+
+#: .\main\templates\about.html:16
+msgid "Geography of Hungary"
+msgstr "Magyarország földrajza"
+
+#: .\main\templates\about.html:17
+msgid ""
+"Roughly the size of the state of Indiana, Hungary is a landlocked country in "
+"Central Europe..."
+msgstr ""
+"Magyarország körülbelül akkora, mint Indiana állam, és egy tengerparttal nem "
+"rendelkező ország Közép-Európában..."
+
+# --- ABOUT ---
+#: .\main\templates\about.html:19 .\main\templates\gallery.html:77
+#: .\main\templates\index.html:17
+msgid "About Hungary"
+msgstr "Magyarországról"
+
+#: .\main\templates\about.html:20
+msgid "Hungary has a rich history and vibrant culture."
+msgstr "Magyarország gazdag történelemmel és élénk kultúrával rendelkezik."
+
+#: .\main\templates\about.html:21
+msgid "Learn more in our History section."
+msgstr "További információ a Történelem oldalon."
+
+# --- BASE ---
+#: .\main\templates\base.html:8 .\main\templates\base.html:22
+msgid "Hungarian Heritage Site"
+msgstr "Magyar Örökség Oldal"
+
+#: .\main\templates\base.html:41 .\main\templates\gallery.html:75
+msgid "Home"
+msgstr "Főoldal"
+
+#: .\main\templates\base.html:45
+msgid "About"
+msgstr "Rólunk"
+
+#: .\main\templates\base.html:46 .\main\templates\gallery.html:8
+#: .\main\templates\index.html:22
+msgid "Gallery"
+msgstr "Galéria"
+
+#: .\main\templates\base.html:47 .\main\templates\gallery.html:65
+msgid "Clothing"
+msgstr "Ruházat"
+
+#: .\main\templates\base.html:48
+msgid "Culture"
+msgstr "Kultúra"
+
+#: .\main\templates\base.html:49
+msgid "Food"
+msgstr "Ételek"
+
+#: .\main\templates\base.html:50
+msgid "Holidays"
+msgstr "Ünnepek"
+
+#: .\main\templates\base.html:51 .\main\templates\gallery.html:47
+msgid "Landmarks"
+msgstr "Nevezetességek"
+
+#: .\main\templates\base.html:52 .\main\templates\gallery.html:20
+msgid "History"
+msgstr "Történelem"
+
+#: .\main\templates\base.html:53 .\main\templates\gallery.html:56
+msgid "Language"
+msgstr "Nyelv"
+
+#: .\main\templates\base.html:54 .\main\templates\resources.html:8
+msgid "Resources"
+msgstr "Források"
+
+#: .\main\templates\base.html:57
+msgid "Contact"
+msgstr "Kapcsolat"
+
+#: .\main\templates\base.html:61
+msgid "Logout"
+msgstr "Kijelentkezés"
+
+#: .\main\templates\base.html:63
+msgid "Login"
+msgstr "Bejelentkezés"
+
+#: .\main\templates\base.html:79
+msgid "Hungarian Heritage Project"
+msgstr "Magyar Örökség Projekt"
+
+# --- CLOTHING ---
+#: .\main\templates\clothing.html:8 .\main\templates\gallery.html:63
+msgid "Traditional Hungarian Clothing"
+msgstr "Hagyományos magyar ruházat"
+
+#: .\main\templates\clothing.html:12
+msgid ""
+"Hungarian traditional clothing reflects the rich cultural heritage of "
+"different regions. Embroidery, patterns, and colors vary widely, often "
+"showing a family or village’s history and identity."
+msgstr ""
+"A magyar népviselet tükrözi a különböző tájegységek gazdag kulturális "
+"örökségét. A hímzések, minták és színek széles skálán mozognak, gyakran egy "
+"család vagy falu történetét és identitását jelképezik."
+
+#: .\main\templates\clothing.html:16
+msgid "Boy and Girl"
+msgstr "Fiú és lány"
+
+#: .\main\templates\clothing.html:17
+msgid "Dancing"
+msgstr "Tánc"
+
+#: .\main\templates\clothing.html:18
+msgid "Family"
+msgstr "Család"
+
+#: .\main\templates\clothing.html:24
+msgid "Folk Costumes"
+msgstr "Népi viseletek"
+
+#: .\main\templates\clothing.html:25
+#, fuzzy
+#| msgid "Folk Costumes"
+msgid "Folk Costume"
+msgstr "Népi viseletek"
+
+#: .\main\templates\clothing.html:27
+msgid ""
+"These are often worn during festivals, weddings, and national celebrations. "
+"Women wear embroidered blouses and skirts, while men wear vests and trousers "
+"adorned with local patterns."
+msgstr ""
+"Ezeket gyakran viselik fesztiválokon, esküvőkön és nemzeti ünnepeken is. A "
+"nők hímzett blúzokat és szoknyákat, míg a férfiak mellényeket és nadrágokat "
+"hordanak, amelyeket helyi minták díszítenek."
+
+#: .\main\templates\clothing.html:32
+msgid "Accessories"
+msgstr "Kiegészítők"
+
+#: .\main\templates\clothing.html:35 .\main\templates\clothing.html:36
+msgid "Head Covering"
+msgstr "Fejfedő"
+
+#: .\main\templates\clothing.html:39 .\main\templates\clothing.html:40
+msgid "Traditional Hat"
+msgstr "Hagyományos kalap"
+
+#: .\main\templates\clothing.html:43 .\main\templates\clothing.html:44
+msgid "Soldier Hat"
+msgstr "Katonai csákó"
+
+#: .\main\templates\clothing.html:47
+msgid "Scarf"
+msgstr "Kendő"
+
+#: .\main\templates\clothing.html:48
+#, fuzzy
+#| msgid "Traditional Clothing"
+msgid "Traditional Scarf"
+msgstr "Hagyományos ruházat"
+
+#: .\main\templates\clothing.html:51
+msgid "Male Hat"
+msgstr "Férfi kalap"
+
+# --- CULTURE ---
+#: .\main\templates\clothing.html:52
+#, fuzzy
+#| msgid "Hungarian Culture"
+msgid "Hungarian Male Hat"
+msgstr "Magyar kultúra"
+
+#: .\main\templates\clothing.html:55 .\main\templates\clothing.html:56
+msgid "Modern Hat"
+msgstr "Modern kalap"
+
+#: .\main\templates\clothing.html:59
+msgid "Female Hat"
+msgstr "Női főkötő"
+
+#: .\main\templates\clothing.html:61
+msgid "Female Traditional Hat"
+msgstr "Hagyományos női főkötő"
+
+#: .\main\templates\clothing.html:67
+msgid "Regional Variations"
+msgstr "Regionális változatok"
+
+#: .\main\templates\clothing.html:69
+msgid ""
+"Each region has unique designs and colors, representing the local heritage "
+"and community traditions."
+msgstr ""
+"Minden régiónak egyedi mintái és színei vannak, amelyek a helyi örökséget és "
+"a közösségi hagyományokat képviselik."
+
+#: .\main\templates\clothing.html:71
+#, fuzzy
+#| msgid "Culture & Traditions"
+msgid "Explore Culture & Traditions"
+msgstr "Kultúra és hagyományok"
+
+# --- CONTACT ---
+#: .\main\templates\contact.html:7
+msgid "Contact Us"
+msgstr "Kapcsolat"
+
+#: .\main\templates\contact.html:10
+msgid "If you have any questions, feel free to reach out!"
+msgstr "Ha bármilyen kérdése van, forduljon hozzánk bizalommal!"
+
+#: .\main\templates\contact.html:17
+msgid "Name"
+msgstr "Név"
+
+#: .\main\templates\contact.html:23
+msgid "Email"
+msgstr "E-mail"
+
+#: .\main\templates\contact.html:29
+msgid "Message"
+msgstr "Üzenet"
+
+#: .\main\templates\contact.html:35
+#, fuzzy
+#| msgid "Message"
+msgid "Send Message"
+msgstr "Üzenet"
+
+# --- CULTURE ---
+#: .\main\templates\culture.html:8
+msgid "Hungarian Culture"
+msgstr "Magyar kultúra"
+
+#: .\main\templates\culture.html:11
+msgid ""
+"Hungary has a rich and diverse culture influenced by its long history. "
+"Traditional folk music and dance remain important today."
+msgstr ""
+"Magyarország gazdag és sokszínű kultúrával rendelkezik, amelyet hosszú "
+"történelme alakított. A hagyományos népzene és néptánc ma is fontos szerepet "
+"játszik."
+
+#: .\main\templates\culture.html:15
+#, python-format
+msgid ""
+"Hungary is home to several ethnic groups. The majority are Hungarians, "
+"making up approximately 85.6%% of the population."
+msgstr ""
+"Magyarországon több etnikai csoport él. A többséget a magyarok alkotják, "
+"akik a népesség körülbelül 85,6%%-át teszik ki."
+
+#: .\main\templates\culture.html:19
+#, python-format
+msgid ""
+"The largest minority group in Hungary is the Roma population at around 3%%, "
+"followed by Germans (1%%), Slovaks (0.3%%), Romanians (0.3%%), and Croats "
+"(0.2%%)."
+msgstr ""
+"Magyarország legnagyobb kisebbségi csoportja a roma lakosság, körülbelül 3%%-"
+"kal, ezt követik a németek (1%%), szlovákok (0,3%%), románok (0,3%%) és "
+"horvátok (0,2%%)."
+
+#: .\main\templates\culture.html:23
+msgid ""
+"Hungarian culture, like many others, has been shaped by a variety of "
+"historical influences."
+msgstr ""
+"A magyar kultúrát, sok más kultúrához hasonlóan, különféle történelmi "
+"hatások alakították."
+
+#: .\main\templates\culture.html:27
+msgid ""
+"These influences are reflected in the country's art, literature, and "
+"traditions, especially in music."
+msgstr ""
+"Ezek a hatások tükröződnek az ország művészetében, irodalmában és "
+"hagyományaiban, különösen a zenében."
+
+#: .\main\templates\culture.html:31
+#, fuzzy
+#| msgid "Famous composers like Franz Liszt and Béla Bartók"
+msgid "Famous Hungarian composers include Franz Liszt and Béla Bartók."
+msgstr "Híres magyar zeneszerzők közé tartozik Liszt Ferenc és Bartók Béla."
+
+# --- CULTURE ---
+#: .\main\templates\culture.html:34
+#, fuzzy
+#| msgid "Hungarian Culture"
+msgid "Famous Hungarian Figures"
+msgstr "Híres magyar személyiségek"
+
+#: .\main\templates\culture.html:37
+msgid ""
+"Throughout history, Hungary has produced many notable individuals who have "
+"made significant contributions to various fields."
+msgstr ""
+"A történelem során Magyarország számos kiemelkedő személyiséget adott a "
+"világnak, akik jelentős hozzájárulást tettek különböző területeken."
+
+#: .\main\templates\culture.html:43
+msgid "Ernő Rubik – inventor of the Rubik's Cube"
+msgstr "Rubik Ernő – a Rubik-kocka feltalálója"
+
+#: .\main\templates\culture.html:47
+msgid "Miklós Jancsó – film director"
+msgstr "Jancsó Miklós – filmrendező"
+
+#: .\main\templates\culture.html:51
+msgid "Franz Liszt – composer and pianist"
+msgstr "Liszt Ferenc – zeneszerző és zongoraművész"
+
+#: .\main\templates\culture.html:55
+msgid "Béla Bartók – composer and ethnomusicologist"
+msgstr "Bartók Béla – zeneszerző és népzenekutató"
+
+#: .\main\templates\culture.html:59
+msgid "Folk dances and traditional clothing"
+msgstr "Néptánc és hagyományos ruházat"
+
+#: .\main\templates\culture.html:60
+msgid "Handmade crafts and embroidery"
+msgstr "Kézműves alkotások és hímzés"
+
+#: .\main\templates\culture.html:61
+#, fuzzy
+#| msgid "Cuisine & Traditions"
+msgid "Rich musical traditions"
+msgstr "Gazdag zenei hagyományok"
+
+# --- FOOD ---
+#: .\main\templates\food.html:7
+msgid "Hungarian Food"
+msgstr "Magyar ételek"
+
+#: .\main\templates\food.html:13
+msgid "Gulyás (Goulash)"
+msgstr "Gulyás"
+
+#: .\main\templates\food.html:15
+msgid "A hearty stew made with beef, vegetables, and vibrant paprika."
+msgstr ""
+"Egy tartalmas egytálétel marhahússal, zöldségekkel és fűszeres paprikával."
+
+#: .\main\templates\food.html:20
+msgid "Pörkölt"
+msgstr "Pörkölt"
+
+#: .\main\templates\food.html:22
+msgid "A savory, thick stew slow-cooked with onions and roasted meats."
+msgstr "Egy sűrű, ízletes ragu, amely hagymával és pirított hússal készül."
+
+#: .\main\templates\food.html:27
+msgid "Lángos"
+msgstr "Lángos"
+
+#: .\main\templates\food.html:29
+msgid "Fried dough topped with garlic, sour cream, and grated cheese."
+msgstr "Olajban sült tészta, fokhagymával, tejföllel és reszelt sajttal."
+
+#: .\main\templates\food.html:34
+msgid "Csirke Paprikás"
+msgstr "Paprikás csirke"
+
+#: .\main\templates\food.html:36
+msgid "Creamy chicken simmered in a rich, flavorful paprika sauce."
+msgstr "Krémes csirkés étel gazdag, ízletes paprikás szószban."
+
+#: .\main\templates\gallery.html:11
+#, fuzzy
+#| msgid ""
+#| "Explore a visual journey through Hungary's landscapes, architecture, and "
+#| "cultural events. Click on a section to learn more."
+msgid ""
+"Explore Hungary's landscapes, architecture, cuisine, and cultural events. "
+"Click on a section to learn more."
+msgstr ""
+"Fedezze fel Magyarország tájait, építészetét és kulturális eseményeit. "
+"Kattintson egy részre a továbblépéshez."
+
+#: .\main\templates\gallery.html:18
+msgid "Budapest Skyline"
+msgstr "Budapesti látkép"
+
+#: .\main\templates\gallery.html:21
+msgid "Discover Hungary's rich past and historical landmarks."
+msgstr "Fedezze fel Magyarország gazdag múltját és történelmi nevezetességeit."
+
+#: .\main\templates\gallery.html:27
+#, fuzzy
+#| msgid "Traditional Clothing"
+msgid "Traditional Folk Dance"
+msgstr "Hagyományos ruházat"
+
+#: .\main\templates\gallery.html:29 .\main\templates\index.html:32
+msgid "Culture & Traditions"
+msgstr "Kultúra és hagyományok"
+
+#: .\main\templates\gallery.html:30
+msgid "Experience vibrant Hungarian festivals, music, and folk dances."
+msgstr "Élje át a pezsgő magyar fesztiválokat, zenét és néptáncot."
+
+# --- GALLERY ---
+#: .\main\templates\gallery.html:36
+msgid "Hungarian Cuisine"
+msgstr "Magyar konyha"
+
+#: .\main\templates\gallery.html:38 .\main\templates\index.html:37
+msgid "Cuisine"
+msgstr "Konyha"
+
+#: .\main\templates\gallery.html:39
+msgid "Savor traditional Hungarian dishes like Gulyás and Paprikás Csirke."
+msgstr ""
+"Kóstolja meg a hagyományos magyar ételeket, mint a gulyás és a paprikás "
+"csirke."
+
+#: .\main\templates\gallery.html:45 .\main\templates\landmarks.html:44
+msgid "Lake Balaton"
+msgstr "Balaton"
+
+#: .\main\templates\gallery.html:48
+msgid "Explore iconic landmarks and scenic spots across Hungary."
+msgstr ""
+"Fedezze fel Magyarország ikonikus nevezetességeit és festői helyszíneit."
+
+# --- LANGUAGE ---
+#: .\main\templates\gallery.html:54
+msgid "Hungarian Language"
+msgstr "Magyar nyelv"
+
+#: .\main\templates\gallery.html:57
+msgid "Learn about the Hungarian language and unique expressions."
+msgstr "Ismerje meg a magyar nyelvet és annak egyedi kifejezéseit."
+
+#: .\main\templates\gallery.html:66
+msgid "Discover traditional Hungarian attire and textile arts."
+msgstr "Fedezze fel a hagyományos magyar viseletet és textilművészetet."
+
+#: .\main\templates\gallery.html:74
+msgid "Return to the"
+msgstr "Vissza a"
+
+#: .\main\templates\gallery.html:76
+msgid "page or visit"
+msgstr "oldalra vagy látogasson el a"
+
+#: .\main\templates\gallery.html:78
+msgid "for more details."
+msgstr "további részletekért."
+
+# --- HISTORY ---
+#: .\main\templates\history.html:7
+#, fuzzy
+#| msgid "Hungary History"
+msgid "Hungarian History"
+msgstr "Magyar történelem"
+
+#: .\main\templates\history.html:10
+#, fuzzy
+#| msgid ""
+#| "Hungary has a long and rich history, dating back over a thousand years. "
+#| "It includes the formation of the Hungarian state and important events "
+#| "like the 1848 Revolution."
+msgid ""
+"\n"
+"    Hungary has a long and rich history dating back over a thousand years. "
+"Many significant events since the early Middle Ages have shaped the "
+"Hungarian people and nation.\n"
+"    "
+msgstr ""
+"\n"
+"    Magyarország történelme több mint ezer évre nyúlik vissza. Számos fontos "
+"esemény a kora középkortól kezdve formálta a magyar népet és nemzetet.\n"
+"    "
+
+#: .\main\templates\history.html:16
+msgid ""
+"\n"
+"    The Hungarian tribes, led by Árpád, settled in the Carpathian Basin in "
+"895 AD, marking the beginning of the Hungarian state.\n"
+"    "
+msgstr ""
+"\n"
+"    A magyar törzsek Árpád vezetésével 895-ben telepedtek le a Kárpát-"
+"medencében, ezzel megjelölve a magyar állam kezdetét.\n"
+"    "
+
+#: .\main\templates\history.html:22
+msgid ""
+"\n"
+"    In 1000 AD, Hungary was officially recognized as a Christian kingdom "
+"under King Stephen I, who is considered the founder of the Hungarian state.\n"
+"    "
+msgstr ""
+"\n"
+"    1000-ben Magyarországot hivatalosan keresztény királysággá "
+"nyilvánították I. István király alatt, akit a magyar állam megalapítójának "
+"tekintenek.\n"
+"    "
+
+#: .\main\templates\history.html:28
+msgid ""
+"\n"
+"    In 1241, the Mongol invasion devastated Hungary, causing widespread "
+"destruction and loss of life. The country was later rebuilt and strengthened "
+"under King Béla IV.\n"
+"    "
+msgstr ""
+"\n"
+"    1241-ben a mongol invázió súlyosan elpusztította Magyarországot, "
+"hatalmas pusztítást és emberveszteséget okozva. Az országot később IV. Béla "
+"király újjáépítette és megerősítette.\n"
+"    "
+
+#: .\main\templates\history.html:34
+msgid ""
+"\n"
+"    Between 1458 and 1490, under King Matthias Corvinus, Hungary experienced "
+"a cultural and economic renaissance and became one of the most powerful "
+"states in Europe.\n"
+"    "
+msgstr ""
+"\n"
+"    1458 és 1490 között, Mátyás király uralkodása alatt Magyarország "
+"kulturális és gazdasági reneszánszát élte, és Európa egyik legerősebb "
+"államává vált.\n"
+"    "
+
+#: .\main\templates\history.html:40
+msgid ""
+"\n"
+"    In 1526, Hungary was defeated by the Ottoman Empire at the Battle of "
+"Mohács, leading to approximately 150 years of occupation.\n"
+"    "
+msgstr ""
+"\n"
+"    1526-ban Magyarország vereséget szenvedett az Oszmán Birodalomtól a "
+"mohácsi csatában, amely körülbelül 150 évnyi megszálláshoz vezetett.\n"
+"    "
+
+#: .\main\templates\history.html:46
+msgid ""
+"\n"
+"    Hungary’s history also includes major events such as the Revolution of "
+"1848, which played a key role in shaping the modern nation.\n"
+"    "
+msgstr ""
+"\n"
+"    Magyarország történelme olyan fontos eseményeket is magában foglal, mint "
+"az 1848-as forradalom, amely kulcsszerepet játszott a modern nemzet "
+"kialakulásában.\n"
+"    "
+
+#: .\main\templates\history.html:52
+msgid ""
+"\n"
+"    In 1956, a nationwide revolution against the Soviet-imposed government "
+"began. Though it was eventually suppressed by Soviet forces, it remains a "
+"defining symbol of the Hungarian struggle for freedom and national "
+"independence.\n"
+"    "
+msgstr ""
+"\n"
+"    1956-ban országos forradalom kezdődött a szovjetek által befolyásolt "
+"kormány ellen. Bár a szovjet erők leverték, a mai napig a szabadságért és "
+"nemzeti függetlenségért folytatott magyar küzdelem meghatározó szimbóluma.\n"
+"    "
+
+# --- HISTORY ---
+#: .\main\templates\history.html:59
+#, fuzzy
+#| msgid "Hungary History"
+msgid "Hungary Today"
+msgstr "Magyar történelem"
+
+#: .\main\templates\history.html:63
+msgid ""
+"\n"
+"    Today, Hungary is a member of the European Union and NATO. However, the "
+"nation currently faces significant economic challenges. Recent data "
+"indicates that Hungary has become one of the poorest nations in the EU, with "
+"household consumption and living standards falling below those of almost all "
+"other member states.\n"
+"    "
+msgstr ""
+"\n"
+"    Ma Magyarország az Európai Unió és a NATO tagja. Ugyanakkor az ország "
+"jelentős gazdasági kihívásokkal küzd. A legfrissebb adatok szerint "
+"Magyarország az EU egyik legszegényebb országa lett, ahol a háztartási "
+"fogyasztás és az életszínvonal szinte minden más tagállaménál alacsonyabb.\n"
+"    "
+
+#: .\main\templates\history.html:69
+msgid ""
+"\n"
+"    As the country moves forward, it continues to navigate complex political "
+"and economic landscapes, balancing its deep cultural heritage with the "
+"pressures of modern governance within the European Union.\n"
+"    "
+msgstr ""
+"\n"
+"    Az ország előrehaladva továbbra is összetett politikai és gazdasági "
+"kihívások között navigál, miközben mély kulturális örökségét egyensúlyba "
+"hozza az Európai Unión belüli modern kormányzás követelményeivel.\n"
+"    "
+
+# --- HOLIDAYS ---
+#: .\main\templates\holidays.html:7
+msgid "Holidays & Traditions"
+msgstr "Ünnepek és hagyományok"
+
+#: .\main\templates\holidays.html:10
+msgid ""
+"Hungary has many rich and meaningful holidays that reflect its culture, "
+"history, and traditions."
+msgstr "Magyarország gazdag ünnepi hagyományokkal rendelkezik."
+
+#: .\main\templates\holidays.html:20
+msgid "Christmas"
+msgstr "Karácsony"
+
+#: .\main\templates\holidays.html:21
+msgid ""
+"A time for family gatherings, traditional foods, and festive celebrations "
+"across Hungary."
+msgstr ""
+"A családi összejövetelek, hagyományos ételek és ünnepi ünneplések ideje "
+"Magyarország-szerte."
+
+#: .\main\templates\holidays.html:29
+msgid "Easter"
+msgstr "Húsvét"
+
+#: .\main\templates\holidays.html:30
+#, fuzzy
+#| msgid ""
+#| "Celebrated with unique traditions like \"watering\" and colorful folk "
+#| "customs."
+msgid ""
+"Celebrated with unique traditions like 'watering' and colorful folk customs."
+msgstr ""
+"Különleges hagyományokkal ünneplik, mint a locsolkodás és a színes "
+"népszokások."
+
+#: .\main\templates\holidays.html:38
+msgid "St. Stephen’s Day"
+msgstr "Szent István napja"
+
+#: .\main\templates\holidays.html:39
+msgid ""
+"A national holiday celebrating Hungary’s founding with fireworks and "
+"celebrations."
+msgstr ""
+"Nemzeti ünnep, amely Magyarország megalapítását ünnepli tűzijátékkal és "
+"rendezvényekkel."
+
+# --- LANGUAGE ---
+#: .\main\templates\holidays.html:45
+#, fuzzy
+#| msgid "Hungarian Language"
+msgid "Hungarian Name Days"
+msgstr "Magyar névnapok"
+
+#: .\main\templates\holidays.html:47
+#, fuzzy
+#| msgid "Name"
+msgid "Name Days"
+msgstr "Névnapok"
+
+#: .\main\templates\holidays.html:48
+msgid ""
+"In Hungary, name days are celebrated almost as much as birthdays, with each "
+"name assigned to a specific day of the year."
+msgstr ""
+"Magyarországon a névnapokat majdnem olyan fontosnak tartják, mint a "
+"születésnapokat, és minden névhez az év egy adott napja tartozik."
+
+# --- INDEX ---
+#: .\main\templates\index.html:8
+#, fuzzy
+#| msgid "Welcome to the Magyar Heritage Site"
+msgid "Welcome to the Hungarian Heritage Site"
+msgstr "Üdvözöljük a Magyar Örökség Oldalon"
+
+#: .\main\templates\index.html:11
+msgid ""
+"Discover the rich culture, history, and traditions of Hungary through our "
+"collection of articles, images, and resources."
+msgstr ""
+"Fedezze fel Magyarország gazdag kultúráját, történelmét és hagyományait "
+"cikkek, képek és források segítségével."
+
+#: .\main\templates\index.html:18
+msgid "Learn about Hungary's geography, people, and cultural identity."
+msgstr ""
+"Ismerje meg Magyarország földrajzát, lakosságát és kulturális identitását."
+
+#: .\main\templates\index.html:23
+msgid ""
+"Explore a visual journey through Hungary's landscapes, architecture, and "
+"cultural events."
+msgstr "Fedezze fel Magyarország tájait, építészetét és kulturális eseményeit."
+
+#: .\main\templates\index.html:27
+msgid "Traditional Clothing"
+msgstr "Hagyományos ruházat"
+
+#: .\main\templates\index.html:28
+msgid ""
+"Discover the vibrant traditional attire of Hungary and its cultural "
+"significance."
+msgstr ""
+"Fedezze fel Magyarország élénk hagyományos viseletét és annak kulturális "
+"jelentőségét."
+
+#: .\main\templates\index.html:33
+msgid ""
+"Dive into the customs, festivals, and artistic expressions of Hungarian "
+"culture."
+msgstr ""
+"Merüljön el a magyar kultúra szokásaiban, fesztiváljaiban és művészi "
+"kifejezésformáiban."
+
+#: .\main\templates\index.html:38
+msgid ""
+"Savor the flavors of Hungary with traditional dishes and culinary delights."
+msgstr ""
+"Élvezze Magyarország ízeit a hagyományos ételek és kulináris különlegességek "
+"révén."
+
+# --- LANDMARKS ---
+#: .\main\templates\landmarks.html:8
+msgid "Famous Landmarks of Hungary"
+msgstr "Magyarország híres nevezetességei"
+
+#: .\main\templates\landmarks.html:17
+#, fuzzy
+#| msgid "Hungarian Parliament Building in Budapest"
+msgid "Parliament Building"
+msgstr "Országház"
+
+#: .\main\templates\landmarks.html:18
+msgid ""
+"One of Europe's oldest legislative buildings, situated on the bank of the "
+"Danube in Budapest."
+msgstr ""
+"Európa egyik legrégebbi törvényhozó épülete, a Duna partján, Budapesten."
+
+#: .\main\templates\landmarks.html:26
+msgid "Buda Castle"
+msgstr "Budai vár"
+
+#: .\main\templates\landmarks.html:27
+msgid ""
+"The historical castle and palace complex of the Hungarian kings in Budapest."
+msgstr "A magyar királyok történelmi vár- és palotaegyüttese Budapesten."
+
+#: .\main\templates\landmarks.html:35
+msgid "Chain Bridge"
+msgstr "Lánchíd"
+
+#: .\main\templates\landmarks.html:36
+msgid ""
+"The first permanent stone bridge connecting Buda and Pest across the Danube "
+"River."
+msgstr ""
+"Az első állandó kőhíd, amely összeköti Budát és Pestet a Dunán keresztül."
+
+#: .\main\templates\landmarks.html:45
+msgid ""
+"The largest lake in Central Europe and a favorite destination for summer "
+"relaxation."
+msgstr "Közép-Európa legnagyobb tava, népszerű nyári üdülőhely."
+
+#: .\main\templates\landmarks.html:53
+msgid "Thermal Baths"
+msgstr "Termálfürdők"
+
+#: .\main\templates\landmarks.html:54
+msgid ""
+"Hungary is famous for its medicinal thermal waters and beautiful historic "
+"spa buildings."
+msgstr ""
+"Magyarország híres gyógyhatású termálvizeiről és gyönyörű történelmi "
+"fürdőépületeiről."
+
+#: .\main\templates\landmarks.html:63
+msgid "State Opera House"
+msgstr "Állami Operaház"
+
+#: .\main\templates\landmarks.html:64
+msgid ""
+"A neo-Renaissance masterpiece known for its incredible acoustics and beauty."
+msgstr ""
+"Neoreneszánsz mestermű, amely híres kiváló akusztikájáról és szépségéről."
+
+# --- LANGUAGE ---
+#: .\main\templates\language.html:7
+#, fuzzy
+#| msgid "Hungarian Language"
+msgid "Hungarian Language (Magyar)"
+msgstr "Magyar nyelv"
+
+#: .\main\templates\language.html:13
+msgid "The Alphabet"
+msgstr "Az ábécé"
+
+#: .\main\templates\language.html:15
+msgid ""
+"A, Á, B, C, Cs, D, Dz, Dzs, E, É, F, G, Gy, H, I, Í, J, K, L, Ly, M, N, Ny, "
+"O, Ó, Ö, Ő, P, R, S, Sz, T, Ty, U, Ú, Ü, Ű, V, Z, Zs"
+msgstr ""
+"A, Á, B, C, Cs, D, Dz, Dzs, E, É, F, G, Gy, H, I, Í, J, K, L, Ly, M, N, Ny, "
+"O, Ó, Ö, Ő, P, R, S, Sz, T, Ty, U, Ú, Ü, Ű, V, Z, Zs"
+
+#: .\main\templates\language.html:18
+msgid "Vowels: á, é, í, ó, ö, ő, ú, ü, ű"
+msgstr "Magánhangzók: á, é, í, ó, ö, ő, ú, ü, ű"
+
+#: .\main\templates\language.html:24
+msgid "Numbers (0-10)"
+msgstr "Számok (0–10)"
+
+#: .\main\templates\language.html:26
+msgid "0: nulla • 1: egy • 2: kettő • 3: három • 4: négy • 5: öt"
+msgstr "0: nulla • 1: egy • 2: kettő • 3: három • 4: négy • 5: öt"
+
+#: .\main\templates\language.html:29
+msgid "6: hat • 7: hét • 8: nyolc • 9: kilenc • 10: tíz"
+msgstr "6: hat • 7: hét • 8: nyolc • 9: kilenc • 10: tíz"
+
+#: .\main\templates\language.html:35
+msgid "Essential Words"
+msgstr "Alapvető szavak"
+
+#: .\main\templates\language.html:37
+msgid "Family: Család • Mother: Anya • Father: Apa • Job: Munka"
+msgstr "Család: Family • Mother: Anya • Father: Apa • Job: Munka"
+
+#: .\main\templates\language.html:40
+msgid "Car: Autó • Train: Vonat • Bridge: Híd • Food: Étel"
+msgstr "Autó: Car • Vonat: Train • Híd: Bridge • Étel: Food"
+
+#: .\main\templates\resources.html:13
+msgid "History & Economy"
+msgstr "Történelem és gazdaság"
+
+# --- CLOTHING ---
+#: .\main\templates\resources.html:16
+#, fuzzy
+#| msgid "Traditional Hungarian Clothing"
+msgid "Britannica: Hungarian Economy"
+msgstr "Hagyományos magyar ruházat"
+
+#: .\main\templates\resources.html:17
+msgid "IMF: Historical Perspectives"
+msgstr "IMF: Történelmi perspektívák"
+
+#: .\main\templates\resources.html:18
+msgid "World Atlas: Natural Resources"
+msgstr "World Atlas: Természeti erőforrások"
+
+#: .\main\templates\resources.html:19
+msgid "Wikipedia: Hungary"
+msgstr "Wikipédia: Magyarország"
+
+#: .\main\templates\resources.html:26
+#, fuzzy
+#| msgid "Language"
+msgid "Language Tools"
+msgstr "Nyelv"
+
+# --- FOOD ---
+#: .\main\templates\resources.html:29
+#, fuzzy
+#| msgid "Hungarian Food"
+msgid "HungarianPod101"
+msgstr "Magyar ételek"
+
+# --- CULTURE ---
+#: .\main\templates\resources.html:30
+#, fuzzy
+#| msgid "Hungarian Culture"
+msgid "Hungarian Kati: Daily Practice"
+msgstr "Magyar kultúra"
+
+#: .\main\templates\resources.html:31
+msgid "University of Iowa Resources"
+msgstr ""
+
+#: .\main\templates\resources.html:38
+msgid "Nature & Environment"
+msgstr "Természet és környezet"
+
+#: .\main\templates\resources.html:41
+msgid "EU Environment Report 2025"
+msgstr "EU környezeti jelentés 2025"
+
+#: .\main\templates\resources.html:42
+msgid "Water & Geography of Hungary"
+msgstr "Magyarország vizei és földrajza"
+
+#: .\main\templates\resources.html:49
+msgid "Visit & Study"
+msgstr "Látogatás és tanulás"
+
+#: .\main\templates\resources.html:52
+msgid "Visit Hungary Official"
+msgstr "Hivatalos Visit Hungary oldal"
+
+# --- ABOUT ---
+#: .\main\templates\resources.html:53
+#, fuzzy
+#| msgid "About Hungary"
+msgid "Study in Hungary"
+msgstr "Magyarországról"
+
+#~ msgid ""
+#~ "Hungary has a long and complex history, influenced by various cultures "
+#~ "and empires. It has been home to the Magyars since the 9th century and "
+#~ "has seen periods of Ottoman, Habsburg, and Soviet influence."
+#~ msgstr ""
+#~ "Magyarország hosszú és összetett történelemmel rendelkezik, amelyet "
+#~ "különböző kultúrák és birodalmak befolyásoltak. A magyarság a 9. század "
+#~ "óta él itt, és az országot oszmán, Habsburg és szovjet hatás is érte."
+
+#~ msgid ""
+#~ "Hungarian (Magyar) is the official language of Hungary. It is a unique "
+#~ "language belonging to the Uralic language family and is not closely "
+#~ "related to other European languages."
+#~ msgstr ""
+#~ "A magyar (magyar nyelv) Magyarország hivatalos nyelve. Az uráli "
+#~ "nyelvcsaládba tartozik, és nem áll közeli rokonságban a legtöbb európai "
+#~ "nyelvvel."
+
+#~ msgid "Want to learn more? Check out our Language page."
+#~ msgstr "Szeretne többet megtudni? Látogassa meg a Nyelv oldalunkat."
+
+#~ msgid "Cultural Identity"
+#~ msgstr "Kulturális identitás"
+
+#~ msgid ""
+#~ "Hungarians take great pride in their cultural heritage, which includes "
+#~ "traditional music, dance, cuisine, and festivals. The country is known "
+#~ "for its vibrant folk traditions and contributions to art and literature."
+#~ msgstr ""
+#~ "A magyarok büszkék kulturális örökségükre, amely magában foglalja a "
+#~ "hagyományos zenét, táncot, konyhát és fesztiválokat. Az ország híres "
+#~ "élénk népi hagyományairól és művészeti, irodalmi hozzájárulásairól."
+
+#~ msgid "Explore Culture & Traditions and view our Gallery."
+#~ msgstr ""
+#~ "Fedezze fel a Kultúra és hagyományok oldalt, és tekintse meg a Galériát."
+
+#~ msgid ""
+#~ "Discover traditional Hungarian dishes in our Food section and learn about "
+#~ "celebrations in Holidays. Explore iconic Landmarks as well."
+#~ msgstr ""
+#~ "Fedezze fel a hagyományos magyar ételeket az Ételek részben, ismerje meg "
+#~ "az ünnepeket, és tekintse meg a híres nevezetességeket is."
+
+#~ msgid "Hungarian cuisine is known for its rich flavors and use of paprika."
+#~ msgstr ""
+#~ "A magyar konyha híres gazdag ízvilágáról és a paprika használatáról."
+
+#~ msgid "Goulash – a traditional meat stew"
+#~ msgstr "Gulyás – hagyományos húsos ragu"
+
+#~ msgid "Chicken Paprikash – creamy paprika dish"
+#~ msgstr "Paprikás csirke – tejszínes paprikás étel"
+
+#~ msgid "Lángos – fried flatbread"
+#~ msgstr "Lángos – olajban sült lepény"
+
+#~ msgid "Dobos Torte – layered cake with caramel"
+#~ msgstr "Dobos torta – réteges karamellás sütemény"
+
+#~ msgid ""
+#~ "The official language of Hungary is Hungarian (Magyar). It belongs to the "
+#~ "Finno-Ugric language family."
+#~ msgstr ""
+#~ "Magyarország hivatalos nyelve a magyar (magyar nyelv), amely a finnugor "
+#~ "nyelvcsaládba tartozik."
+
+#~ msgid "Very different from most European languages"
+#~ msgstr "Nagyon különbözik az európai nyelvektől"
+
+#~ msgid "Uses unique grammar rules"
+#~ msgstr "Egyedi nyelvtan"
+
+#~ msgid "Includes accented characters"
+#~ msgstr "Ékezetes karaktereket tartalmaz"
+
+#~ msgid "Send"
+#~ msgstr "Küldés"

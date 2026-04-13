@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="culture-section about-section"> <!-- Inherits cursive font -->
+
+    <h2>{% trans "Hungarian Culture" %}</h2>
+
+    <p class="green-cursive-text">
+        {% trans "Hungary has a rich and diverse culture influenced by its long history. Traditional folk music and dance remain important today." %}
+    </p>
+
+    <p class="green-cursive-text">
+        {% trans "Hungary is home to several ethnic groups. The majority are Hungarians, making up approximately 85.6% of the population." %}
+    </p>
+
+    <p class="green-cursive-text">
+        {% trans "The largest minority group in Hungary is the Roma population at around 3%, followed by Germans (1%), Slovaks (0.3%), Romanians (0.3%), and Croats (0.2%)." %}
+    </p>
+
+    <p class="green-cursive-text">
+        {% trans "Hungarian culture, like many others, has been shaped by a variety of historical influences." %}
+    </p>
+
+    <p class="green-cursive-text">
+        {% trans "These influences are reflected in the country's art, literature, and traditions, especially in music." %}
+    </p>
+
+    <p class="green-cursive-text">
+        {% trans "Famous Hungarian composers include Franz Liszt and Béla Bartók." %}
+    </p>
+
+    <h2>{% trans "Famous Hungarian Figures" %}</h2>
+
+    <p class="green-cursive-text">
+        {% trans "Throughout history, Hungary has produced many notable individuals who have made significant contributions to various fields." %}
+    </p>
+
+    <ul class="green-cursive-text person-list">
+    <li>
+        <img src="{% static 'images/erno_rubik.jpg' %}" alt="Ernő Rubik" class="figure-img">
+        {% trans "Ernő Rubik – inventor of the Rubik's Cube" %}
+    </li>
+    <li>
+        <img src="{% static 'images/miklos_jancso.jpg' %}" alt="Miklós Jancsó" class="figure-img">
+        {% trans "Miklós Jancsó – film director" %}
+    </li>
+    <li>
+        <img src="{% static 'images/franz_liszt.jpg' %}" alt="Franz Liszt" class="figure-img">
+        {% trans "Franz Liszt – composer and pianist" %}
+    </li>
+    <li>
+        <img src="{% static 'images/bela_bartok.jpg' %}" alt="Béla Bartók" class="figure-img">
+        {% trans "Béla Bartók – composer and ethnomusicologist" %}
+    </li>
+</ul>
+    <ul class="green-cursive-text" style="list-style-type: none; padding-left: 0;">
+    <li>{% trans "Folk dances and traditional clothing" %}</li>
+    <li>{% trans "Handmade crafts and embroidery" %}</li>
+    <li>{% trans "Rich musical traditions" %}</li>
+</ul>
+
+</section>
+{% endblock %}

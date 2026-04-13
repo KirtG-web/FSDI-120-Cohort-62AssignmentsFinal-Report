@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="about-section">
+    <h2 class="main-page-title">{% trans "Contact Us" %}</h2>
+
+    <p class="green-cursive-text text-center">
+        {% trans "If you have any questions, feel free to reach out!" %}
+    </p>
+
+    <div class="contact-container">
+        <form class="large-form">
+            <!-- Name Group -->
+            <div class="form-group">
+                <label class="form-label">{% trans "Name" %}</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <!-- Email Group -->
+            <div class="form-group">
+                <label class="form-label">{% trans "Email" %}</label>
+                <input type="email" class="form-control">
+            </div>
+
+            <!-- Message Group (Now sits directly under Email) -->
+            <div class="form-group">
+                <label class="form-label">{% trans "Message" %}</label>
+                <textarea class="form-control" rows="6"></textarea>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn-hungarian-red">
+                    {% trans "Send Message" %}
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

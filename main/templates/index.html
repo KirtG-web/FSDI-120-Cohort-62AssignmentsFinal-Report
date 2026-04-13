@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="featured-content">
+
+    <h2>{% trans "Welcome to the Hungarian Heritage Site" %}</h2>
+
+    <p>
+        {% trans "Discover the rich culture, history, and traditions of Hungary through our collection of articles, images, and resources." %}
+    </p>
+
+    <div class="home-sections">
+
+        <div class="home-section">
+            <h3><a href="{% url 'about' %}">{% trans "About Hungary" %}</a></h3>
+            <p>{% trans "Learn about Hungary's geography, people, and cultural identity." %}</p>
+        </div>
+
+        <div class="home-section">
+            <h3><a href="{% url 'gallery' %}">{% trans "Gallery" %}</a></h3>
+            <p>{% trans "Explore a visual journey through Hungary's landscapes, architecture, and cultural events." %}</p>
+        </div>
+
+        <div class="home-section">
+            <h3><a href="{% url 'clothing' %}">{% trans "Traditional Clothing" %}</a></h3>
+            <p>{% trans "Discover the vibrant traditional attire of Hungary and its cultural significance." %}</p>
+        </div>
+
+        <div class="home-section">
+            <h3><a href="{% url 'culture' %}">{% trans "Culture & Traditions" %}</a></h3>
+            <p>{% trans "Dive into the customs, festivals, and artistic expressions of Hungarian culture." %}</p>
+        </div>
+
+        <div class="home-section">
+            <h3><a href="{% url 'food' %}">{% trans "Cuisine" %}</a></h3>
+            <p>{% trans "Savor the flavors of Hungary with traditional dishes and culinary delights." %}</p>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

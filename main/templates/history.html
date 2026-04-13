@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="about-section">
+    <h1>{% trans "Hungarian History" %}</h1>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    Hungary has a long and rich history dating back over a thousand years. Many significant events since the early Middle Ages have shaped the Hungarian people and nation.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    The Hungarian tribes, led by Árpád, settled in the Carpathian Basin in 895 AD, marking the beginning of the Hungarian state.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    In 1000 AD, Hungary was officially recognized as a Christian kingdom under King Stephen I, who is considered the founder of the Hungarian state.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    In 1241, the Mongol invasion devastated Hungary, causing widespread destruction and loss of life. The country was later rebuilt and strengthened under King Béla IV.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    Between 1458 and 1490, under King Matthias Corvinus, Hungary experienced a cultural and economic renaissance and became one of the most powerful states in Europe.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    In 1526, Hungary was defeated by the Ottoman Empire at the Battle of Mohács, leading to approximately 150 years of occupation.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    Hungary’s history also includes major events such as the Revolution of 1848, which played a key role in shaping the modern nation.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    In 1956, a nationwide revolution against the Soviet-imposed government began. Though it was eventually suppressed by Soviet forces, it remains a defining symbol of the Hungarian struggle for freedom and national independence.
+    {% endblocktrans %}
+    </p>
+
+    <!-- Hungary Today Section -->
+<h2 style="font-family: 'Playball', cursive !important; color: #ce2939 !important; font-size: 55px !important; margin-top: 40px;">
+    {% trans "Hungary Today" %}
+</h2>
+    
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    Today, Hungary is a member of the European Union and NATO. However, the nation currently faces significant economic challenges. Recent data indicates that Hungary has become one of the poorest nations in the EU, with household consumption and living standards falling below those of almost all other member states.
+    {% endblocktrans %}
+    </p>
+
+    <p class="green-cursive-text">
+    {% blocktrans %}
+    As the country moves forward, it continues to navigate complex political and economic landscapes, balancing its deep cultural heritage with the pressures of modern governance within the European Union.
+    {% endblocktrans %}
+    </p>
+
+</section>
+{% endblock %}
