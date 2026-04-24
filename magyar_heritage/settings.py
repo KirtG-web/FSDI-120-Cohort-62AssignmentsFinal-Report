@@ -9,11 +9,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # =====================
 # SECURITY
 # =====================
-SECRET_KEY = 'django-insecure-*tn%*9ht*=5-=88m5h03+4fe%of41o=1k2f@nkea1)!j4r070z'
+SECRET_KEY = 'django-insecure-...'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']
 
 
 # =====================
