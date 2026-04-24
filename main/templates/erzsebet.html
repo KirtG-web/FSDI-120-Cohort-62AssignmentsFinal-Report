@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="page-section">
+
+    <div class="profile-card">
+
+        <!-- NAME INSIDE CARD -->
+        <h2 class="profile-title">
+            {% trans "Erzsébet Bérczi German" %}
+        </h2>
+
+        <img src="{% static 'images/erzsebet.jpg' %}" 
+             alt="{% trans 'Erzsébet Bérczi German' %}" 
+             class="profile-image">
+
+        <p class="profile-text">
+            {% trans "This page is dedicated to Erzsébet Bérczi German. She is an important part of this Hungarian Heritage project and represents its personal connection and inspiration." %}
+        </p>
+
+        <p class="profile-text emphasis-text">
+            {% trans "My beloved wife passed away on November 14, 2023. Since then, this journey has never truly been mine alone. Through her, I came to know Hungary—the quiet beauty of its landscapes, the richness of its food, the strength of its people, and the deep tenderness woven into its culture. I would not have known any of this without her. She is gone from this world, but never from my heart. Her presence lives on in this work, and in every step I take forward." %}
+        </p>
+
+        <!-- VIDEO -->
+        <div class="video-container">
+            <video controls>
+                <source src="{% static 'videos/erzsebet.mp4' %}" type="video/mp4">
+                {% trans "Your browser does not support the video tag." %}
+            </video>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

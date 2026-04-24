@@ -3,39 +3,59 @@
 {% load i18n %}
 
 {% block content %}
-<section class="about-section">
-    <h2 class="main-page-title">{% trans "Contact Us" %}</h2>
 
-    <p class="green-cursive-text text-center">
-        {% trans "If you have any questions, feel free to reach out!" %}
-    </p>
+<section class="about-section contact-section">
 
-    <div class="contact-container">
-        <form class="large-form">
-            <!-- Name Group -->
+    <div class="contact-main-card">
+
+        <!-- TITLE -->
+        <h2 class="contact-title">
+            {% trans "Contact Us" %}
+        </h2>
+
+        <!-- INTRO -->
+        <p class="contact-intro">
+            {% trans "If you have any questions, feel free to reach out!" %}
+        </p>
+
+        <!-- MESSAGES -->
+        {% if messages %}
+            {% for message in messages %}
+                <div class="success-message">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <!-- FORM -->
+        <form class="large-form" method="POST" action="{% url 'contact' %}">
+            {% csrf_token %}
+
             <div class="form-group">
-                <label class="form-label">{% trans "Name" %}</label>
-                <input type="text" class="form-control">
+                <label for="name">{% trans "Name" %}</label>
+                <input type="text" id="name" name="name" required>
             </div>
 
-            <!-- Email Group -->
             <div class="form-group">
-                <label class="form-label">{% trans "Email" %}</label>
-                <input type="email" class="form-control">
+                <label for="email">{% trans "Email" %}</label>
+                <input type="email" id="email" name="email" required>
             </div>
 
-            <!-- Message Group (Now sits directly under Email) -->
             <div class="form-group">
-                <label class="form-label">{% trans "Message" %}</label>
-                <textarea class="form-control" rows="6"></textarea>
+                <label for="message">{% trans "Message" %}</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
             </div>
 
-            <div class="text-center">
+            <div class="form-actions">
                 <button type="submit" class="btn-hungarian-red">
                     {% trans "Send Message" %}
                 </button>
             </div>
+
         </form>
+
     </div>
+
 </section>
+
 {% endblock %}

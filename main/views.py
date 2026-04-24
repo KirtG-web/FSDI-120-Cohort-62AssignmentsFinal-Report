@@ -1,15 +1,15 @@
-from django.shortcuts import render
-from django.shortcuts import redirect 
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+from django.contrib import messages
 
-def set_language(request):
-    if request.method == 'POST':
-        lang = request.POST.get('language')
-        request.session['language'] = lang
-    return redirect(request.META.get('HTTP_REFERER', 'home'))
+# NOTE: The set_language view is removed because you are now 
+# using the built-in Django i18n URL include.
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html') # Ensure this matches your filename
+
+def erzsebet(request):
+    return render(request, 'erzsebet.html')
 
 def about(request):
     return render(request, 'about.html')
@@ -29,33 +29,33 @@ def food(request):
 def holidays(request):
     return render(request, 'holidays.html')
 
-def landmarks(request):
-    return render(request, 'landmarks.html')
-
-def contact(request):
-    return render(request, 'contact.html')
-
 def history(request):
     return render(request, 'history.html')
 
 def language(request):
     return render(request, 'language.html')
 
+def landmarks(request):
+    return render(request, 'landmarks.html')
+
 def culture(request):
     return render(request, 'culture.html')
 
-from django.shortcuts import render
-from django.http import HttpResponse
-
-def login_view(request):
-    if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-
-        # TEMP: simple check
-        if username == 'admin' and password == '1234':
-            return HttpResponse("Login successful!")
-        else:
-            return HttpResponse("Invalid credentials", status=401)
-
-    return render(request, 'login.html')
+def contact(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        email = request.POST.get("email")
+        message = request.POST.get("message")
+        
+        full_message = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
+        
+        send_mail(
+            subject="New Contact Form Message",
+            message=full_message,
+            from_email=email,
+            recipient_list=['kirtdgerman13f@gmail.com'],
+            fail_silently=False,
+        )
+        messages.success(request, "Message sent successfully!")
+        return redirect('contact')
+    return render(request, 'contact.html')

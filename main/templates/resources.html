@@ -3,58 +3,58 @@
 {% load i18n %}
 
 {% block content %}
-<section class="about-section">
-    <!-- This class matches the CSS above to center the title -->
-    <h2 class="main-page-title">{% trans "Resources" %}</h2>
-    <div class="holiday-grid">
-        
-        <!-- Category 1: History & Economy -->
-        <div class="holiday-card">
-            <h3>{% trans "History & Economy" %}</h3>
-            <div class="card-content">
-                <ul class="resource-list">
-                    <li><a href="https://www.britannica.com/place/Hungary/Economy" target="_blank">{% trans "Britannica: Hungarian Economy" %}</a></li>
-                    <li><a href="https://www.elibrary.imf.org/display/book/9781451963830/ch001.xml" target="_blank">{% trans "IMF: Historical Perspectives" %}</a></li>
-                    <li><a href="https://www.worldatlas.com/articles/what-are-the-major-natural-resources-of-hungary.html" target="_blank">{% trans "World Atlas: Natural Resources" %}</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Hungary" target="_blank">{% trans "Wikipedia: Hungary" %}</a></li>
-                </ul>
-            </div>
-        </div>
+<section class="page-section">
 
-        <!-- Category 2: Language Learning -->
-        <div class="holiday-card">
-            <h3>{% trans "Language Tools" %}</h3>
-            <div class="card-content">
-                <ul class="resource-list">
-                    <li><a href="https://www.hungarianpod101.com/hungarian-resources/" target="_blank">{% trans "HungarianPod101" %}</a></li>
-                    <li><a href="https://www.hungariankati.com/" target="_blank">{% trans "Hungarian Kati: Daily Practice" %}</a></li>
-                    <li><a href="https://clcl.uiowa.edu/language-resources/hungarian-language-and-culture-resources" target="_blank">{% trans "University of Iowa Resources" %}</a></li>
-                </ul>
-            </div>
-        </div>
+    <!-- MAIN CARD -->
+    <div class="resources-main-card">
 
-        <!-- Category 3: Environment & Geography -->
-        <div class="holiday-card">
-            <h3>{% trans "Nature & Environment" %}</h3>
-            <div class="card-content">
-                <ul class="resource-list">
-                    <li><a href="https://www.eea.europa.eu/en/europe-environment-2025/countries/hungary" target="_blank">{% trans "EU Environment Report 2025" %}</a></li>
-                    <li><a href="https://waterfire.fas.is/Hungary/index.php" target="_blank">{% trans "Water & Geography of Hungary" %}</a></li>
-                </ul>
-            </div>
-        </div>
+        <!-- TITLE -->
+        <h2 class="resources-title">
+            {% trans "Resources" %}
+        </h2>
 
-        <!-- Category 4: Travel & Study -->
-        <div class="holiday-card">
-            <h3>{% trans "Visit & Study" %}</h3>
-            <div class="card-content">
-                <ul class="resource-list">
-                    <li><a href="https://visithungary.com/" target="_blank">{% trans "Visit Hungary Official" %}</a></li>
-                    <li><a href="https://studyinhungary.hu/" target="_blank">{% trans "Study in Hungary" %}</a></li>
-                </ul>
+        <!-- INNER CARDS -->
+        <div class="resources-grid">
+
+            <div class="resources-item">
+                <h3>{% trans "Official Hungarian Tourism Site" %}</h3>
+                <p>{% trans "Explore travel guides, attractions, and cultural events across Hungary." %}</p>
+                <p>
+                    <a href="https://visithungary.com" target="_blank">visithungary.com</a>
+                </p>
             </div>
+
+            <div class="resources-item">
+                <h3>{% trans "Hungarian History Overview" %}</h3>
+                <p>{% trans "Learn about Hungary’s history from early settlements to modern times." %}</p>
+                <p>
+                    <a href="https://www.britannica.com/place/Hungary" target="_blank">
+                        {% trans "Britannica: Hungary" %}
+                    </a>
+                </p>
+            </div>
+
+            <div class="resources-item">
+                <h3>{% trans "Learn Hungarian Language" %}</h3>
+                <p>{% trans "Free resources for learning basic Hungarian vocabulary and grammar." %}</p>
+                <p>
+                    <a href="https://www.duolingo.com" target="_blank">Duolingo</a>
+                </p>
+            </div>
+
+            <div class="resources-item">
+                <h3>{% trans "Hungarian Culture Guide" %}</h3>
+                <p>{% trans "Discover traditions, holidays, food, and cultural customs." %}</p>
+                <p>
+                    <a href="https://www.hungarianconservative.com" target="_blank">
+                        {% trans "Hungarian Culture Articles" %}
+                    </a>
+                </p>
+            </div>
+
         </div>
 
     </div>
+
 </section>
 {% endblock %}

@@ -6,6 +6,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# =====================
+# SECURITY
+# =====================
 SECRET_KEY = 'django-insecure-*tn%*9ht*=5-=88m5h03+4fe%of41o=1k2f@nkea1)!j4r070z'
 
 DEBUG = True
@@ -13,7 +16,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# =====================
+# APPLICATIONS
+# =====================
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -25,11 +30,17 @@ INSTALLED_APPS = [
 ]
 
 
+# =====================
+# MIDDLEWARE
+# =====================
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',  # MUST be after SessionMiddleware
+
+    # required for language switching
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -40,10 +51,13 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'magyar_heritage.urls'
 
 
+# =====================
+# TEMPLATES
+# =====================
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [],  # optional: BASE_DIR / "templates"
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -60,7 +74,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'magyar_heritage.wsgi.application'
 
 
-# Database
+# =====================
+# DATABASE
+# =====================
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -69,7 +85,9 @@ DATABASES = {
 }
 
 
-# Password validation
+# =====================
+# PASSWORD VALIDATION
+# =====================
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -78,41 +96,42 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
+# =====================
+# INTERNATIONALIZATION (EN + HU ONLY)
+# =====================
 USE_I18N = True
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'   # default language
 
 LANGUAGES = [
     ('en', 'English'),
     ('hu', 'Hungarian'),
-    ('de', 'German'),
 ]
 
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
 
-LANGUAGE_COOKIE_NAME = 'django_language'
 
-
-# Static files
-STATIC_URL = 'static/'
+# =====================
+# STATIC FILES
+# =====================
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
 
-# Email (REAL SMTP CONFIG)
+# =====================
+# EMAIL (SMTP - Gmail)
+# =====================
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
 EMAIL_HOST_USER = 'kirtdgerman13f@gmail.com'
-EMAIL_HOST_PASSWORD = 'xxxx xxxx xxxx xxxx'
+EMAIL_HOST_PASSWORD = 'your-app-password-here'  # move to .env in production
+
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
-
-# If you want to test emails in terminal instead, use this instead:
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

@@ -3,42 +3,40 @@
 {% load i18n %}
 
 {% block content %}
-<section class="featured-content">
 
-    <h2>{% trans "Welcome to the Hungarian Heritage Site" %}</h2>
+<div class="home-main-card">
 
-    <p>
-        {% trans "Discover the rich culture, history, and traditions of Hungary through our collection of articles, images, and resources." %}
-    </p>
+    <h1 class="home-title">
+        {% trans "Welcome to the Hungarian Heritage Site" %}
+    </h1>
 
-    <div class="home-sections">
-
-        <div class="home-section">
-            <h3><a href="{% url 'about' %}">{% trans "About Hungary" %}</a></h3>
-            <p>{% trans "Learn about Hungary's geography, people, and cultural identity." %}</p>
+    <div class="home-grid">
+        <div class="home-card">
+            <a href="{% url 'clothing' %}" class="home-link">{% trans "Clothing" %}</a>
+            <p>{% trans "Explore traditional Hungarian clothing and regional costumes." %}</p>
         </div>
 
-        <div class="home-section">
-            <h3><a href="{% url 'gallery' %}">{% trans "Gallery" %}</a></h3>
-            <p>{% trans "Explore a visual journey through Hungary's landscapes, architecture, and cultural events." %}</p>
+        <div class="home-card">
+            <a href="{% url 'culture' %}" class="home-link">{% trans "Culture" %}</a>
+            <p>{% trans "Discover Hungarian traditions, customs, and cultural identity." %}</p>
         </div>
 
-        <div class="home-section">
-            <h3><a href="{% url 'clothing' %}">{% trans "Traditional Clothing" %}</a></h3>
-            <p>{% trans "Discover the vibrant traditional attire of Hungary and its cultural significance." %}</p>
+        <div class="home-card">
+            <a href="{% url 'food' %}" class="home-link">{% trans "Food" %}</a>
+            <p>{% trans "Learn about traditional Hungarian cuisine and dishes." %}</p>
         </div>
 
-        <div class="home-section">
-            <h3><a href="{% url 'culture' %}">{% trans "Culture & Traditions" %}</a></h3>
-            <p>{% trans "Dive into the customs, festivals, and artistic expressions of Hungarian culture." %}</p>
+        <div class="home-card">
+            <a href="{% url 'holidays' %}" class="home-link">{% trans "Holidays" %}</a>
+            <p>{% trans "Explore Hungarian national and seasonal celebrations." %}</p>
         </div>
 
-        <div class="home-section">
-            <h3><a href="{% url 'food' %}">{% trans "Cuisine" %}</a></h3>
-            <p>{% trans "Savor the flavors of Hungary with traditional dishes and culinary delights." %}</p>
+        <div class="home-card">
+            <a href="{% url 'history' %}" class="home-link">{% trans "History" %}</a>
+            <p>{% trans "Understand Hungary’s historical journey and heritage." %}</p>
         </div>
-
     </div>
 
-</section>
+</div>
+
 {% endblock %}

@@ -3,73 +3,66 @@
 {% load i18n %}
 
 {% block content %}
-<section class="about-section">
-    <h1>{% trans "Hungarian History" %}</h1>
+<section class="page-section">
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    Hungary has a long and rich history dating back over a thousand years. Many significant events since the early Middle Ages have shaped the Hungarian people and nation.
-    {% endblocktrans %}
-    </p>
+    <!-- MAIN CARD -->
+    <div class="history-main-card">
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    The Hungarian tribes, led by Árpád, settled in the Carpathian Basin in 895 AD, marking the beginning of the Hungarian state.
-    {% endblocktrans %}
-    </p>
+        <!-- HEADER INSIDE CARD -->
+        <h2 class="history-title">
+            {% trans "Hungarian History" %}
+        </h2>
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    In 1000 AD, Hungary was officially recognized as a Christian kingdom under King Stephen I, who is considered the founder of the Hungarian state.
-    {% endblocktrans %}
-    </p>
+        <p class="history-subtitle">
+            {% trans "A journey through Hungary’s most important historical events and eras." %}
+        </p>
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    In 1241, the Mongol invasion devastated Hungary, causing widespread destruction and loss of life. The country was later rebuilt and strengthened under King Béla IV.
-    {% endblocktrans %}
-    </p>
+        <!-- GRID -->
+        <div class="history-grid">
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    Between 1458 and 1490, under King Matthias Corvinus, Hungary experienced a cultural and economic renaissance and became one of the most powerful states in Europe.
-    {% endblocktrans %}
-    </p>
+            <div class="history-item">
+                <h3>{% trans "Early Settlement (895 AD)" %}</h3>
+                <p>{% trans "The Hungarian tribes, led by Árpád, settled in the Carpathian Basin and established the foundations of the Hungarian state." %}</p>
+            </div>
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    In 1526, Hungary was defeated by the Ottoman Empire at the Battle of Mohács, leading to approximately 150 years of occupation.
-    {% endblocktrans %}
-    </p>
+            <div class="history-item">
+                <h3>{% trans "King Stephen I (1000 AD)" %}</h3>
+                <p>{% trans "Hungary became a Christian kingdom under King Stephen I, the founder of the Hungarian state." %}</p>
+            </div>
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    Hungary’s history also includes major events such as the Revolution of 1848, which played a key role in shaping the modern nation.
-    {% endblocktrans %}
-    </p>
+            <div class="history-item">
+                <h3>{% trans "Mongol Invasion (1241)" %}</h3>
+                <p>{% trans "The Mongol invasion caused widespread destruction, later leading to reconstruction under King Béla IV." %}</p>
+            </div>
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    In 1956, a nationwide revolution against the Soviet-imposed government began. Though it was eventually suppressed by Soviet forces, it remains a defining symbol of the Hungarian struggle for freedom and national independence.
-    {% endblocktrans %}
-    </p>
+            <div class="history-item">
+                <h3>{% trans "Matthias Corvinus Era (1458–1490)" %}</h3>
+                <p>{% trans "A golden age of culture, science, and economic growth under one of Hungary’s most influential kings." %}</p>
+            </div>
 
-    <!-- Hungary Today Section -->
-<h2 style="font-family: 'Playball', cursive !important; color: #ce2939 !important; font-size: 55px !important; margin-top: 40px;">
-    {% trans "Hungary Today" %}
-</h2>
-    
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    Today, Hungary is a member of the European Union and NATO. However, the nation currently faces significant economic challenges. Recent data indicates that Hungary has become one of the poorest nations in the EU, with household consumption and living standards falling below those of almost all other member states.
-    {% endblocktrans %}
-    </p>
+            <div class="history-item">
+                <h3>{% trans "Battle of Mohács (1526)" %}</h3>
+                <p>{% trans "Hungary was defeated by the Ottoman Empire, beginning a long period of occupation." %}</p>
+            </div>
 
-    <p class="green-cursive-text">
-    {% blocktrans %}
-    As the country moves forward, it continues to navigate complex political and economic landscapes, balancing its deep cultural heritage with the pressures of modern governance within the European Union.
-    {% endblocktrans %}
-    </p>
+            <div class="history-item">
+                <h3>{% trans "Revolution of 1848" %}</h3>
+                <p>{% trans "A major uprising that played a key role in shaping modern Hungarian national identity." %}</p>
+            </div>
+
+            <div class="history-item">
+                <h3>{% trans "1956 Revolution" %}</h3>
+                <p>{% trans "A nationwide revolt against Soviet control, symbolizing Hungary’s fight for freedom." %}</p>
+            </div>
+
+            <div class="history-item">
+                <h3>{% trans "Hungary Today" %}</h3>
+                <p>{% trans "Modern Hungary is part of the EU and NATO, navigating economic and political challenges while preserving its cultural heritage." %}</p>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 {% endblock %}

@@ -3,21 +3,61 @@
 {% load i18n %}
 
 {% block content %}
-<section class="about-section">
-    <h1>{% trans "Facts about Hungary" %}</h1>
-    <img src="{% static 'images/Hungarian_map.webp' %}" alt="{% trans 'Map of Hungary' %}" class="hungarian-map">
 
-    <ul>
-        <li>{% trans "Official Name: Hungary" %}</li>
-        <li>{% trans "Capital: Budapest" %}</li>
-        <li>{% trans "Population: 9,825,704" %}</li>
-    </ul>
+<div class="about-card">
 
-    <h3>{% trans "Geography of Hungary" %}</h3>
-    <p>{% blocktrans %}Roughly the size of the state of Indiana, Hungary is a landlocked country in Central Europe...{% endblocktrans %}</p>
+    <!-- TITLE -->
+    <h1 class="about-title">{% trans "Facts About Hungary" %}</h1>
 
-    <h2>{% trans "About Hungary" %}</h2>
-    <p>{% blocktrans %}Hungary has a rich history and vibrant culture.{% endblocktrans %}</p>
-    <a href="{% url 'history' %}">{% trans "Learn more in our History section." %}</a>
-</section>
+    <!-- MAP INSIDE CARD -->
+    <div class="about-map">
+        <img src="{% static 'images/Hungarian_map.webp' %}" alt="{% trans "Map of Hungary" %}">
+    </div>
+
+    <!-- TEXT -->
+    <div class="about-text">
+
+        <p>
+            <strong>{% trans "Population:" %}</strong>
+            {% trans "Approximately 9.6 million people" %}
+        </p>
+
+        <p>
+            <strong>{% trans "Capital:" %}</strong>
+            {% trans "Budapest" %}
+        </p>
+
+        <p>
+            <strong>{% trans "Official Language:" %}</strong>
+            {% trans "Hungarian" %}
+        </p>
+
+        <p>
+            <strong>{% trans "Ethnic Groups:" %}</strong>
+            {% trans "Primarily Hungarian, with minority communities including Roma, German, Slovak, and others" %}
+        </p>
+
+        <p>
+            <strong>{% trans "Location:" %}</strong>
+            {% trans "Central Europe, bordered by Austria, Slovakia, Ukraine, Romania, Serbia, Croatia, and Slovenia" %}
+        </p>
+
+        <p>
+            <strong>{% trans "Culture:" %}</strong>
+            {% trans "Rich traditions in folk music, dance, embroidery, and cuisine" %}
+        </p>
+
+        <p>
+            <strong>{% trans "Famous Feature:" %}</strong>
+            {% trans "Thermal baths and historic architecture throughout the country" %}
+        </p>
+
+        <a href="{% url 'culture' %}" class="about-link">
+            {% trans "Explore Hungarian Culture →" %}
+        </a>
+
+    </div>
+
+</div>
+
 {% endblock %}

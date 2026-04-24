@@ -3,68 +3,46 @@
 {% load i18n %}
 
 {% block content %}
-<section class="about-section">
-    <!-- Main Title (Same font as About page) -->
-    <h2 class="main-page-title">{% trans "Famous Landmarks of Hungary" %}</h2>
+<section class="page-section">
 
-    <!-- 2-Column Card Grid -->
-    <div class="holiday-grid">
+    <!-- MAIN CARD -->
+    <div class="landmark-main-card">
 
-        <!-- Landmark 1: Parliament -->
-        <div class="holiday-card">
-            <img src="{% static 'images/parliment building.jpg' %}" alt="Parliament">
-            <div class="card-content">
+        <!-- TITLE INSIDE CARD -->
+        <h2 class="landmark-title">
+            {% trans "Famous Landmarks of Hungary" %}
+        </h2>
+
+        <!-- GRID INSIDE CARD -->
+        <div class="landmark-grid">
+
+            <div class="landmark-item">
                 <h3>{% trans "Parliament Building" %}</h3>
-                <p>{% trans "One of Europe's oldest legislative buildings, situated on the bank of the Danube in Budapest." %}</p>
+                <img src="{% static 'images/parliament-building.jpg' %}">
+                <p>{% trans "One of Europe's oldest legislative buildings on the Danube." %}</p>
             </div>
-        </div>
 
-        <!-- Landmark 2: Buda Castle -->
-        <div class="holiday-card">
-            <img src="{% static 'images/buda-castle.jpg' %}" alt="Buda Castle">
-            <div class="card-content">
+            <div class="landmark-item">
                 <h3>{% trans "Buda Castle" %}</h3>
-                <p>{% trans "The historical castle and palace complex of the Hungarian kings in Budapest." %}</p>
+                <img src="{% static 'images/buda-castle.jpg' %}">
+                <p>{% trans "Historical castle and palace complex in Budapest." %}</p>
             </div>
-        </div>
 
-        <!-- Landmark 3: Chain Bridge -->
-        <div class="holiday-card">
-            <img src="{% static 'images/chain-bridge.jpg' %}" alt="Chain Bridge">
-            <div class="card-content">
+            <div class="landmark-item">
                 <h3>{% trans "Chain Bridge" %}</h3>
-                <p>{% trans "The first permanent stone bridge connecting Buda and Pest across the Danube River." %}</p>
+                <img src="{% static 'images/chain-bridge.jpg' %}">
+                <p>{% trans "First permanent stone bridge connecting Buda and Pest." %}</p>
             </div>
-        </div>
 
-        <!-- Landmark 4: Lake Balaton -->
-        <div class="holiday-card">
-            <img src="{% static 'images/lake_balaton.jpg' %}" alt="Lake Balaton">
-            <div class="card-content">
+            <div class="landmark-item">
                 <h3>{% trans "Lake Balaton" %}</h3>
-                <p>{% trans "The largest lake in Central Europe and a favorite destination for summer relaxation." %}</p>
+                <img src="{% static 'images/lake-balaton.jpg' %}">
+                <p>{% trans "Largest lake in Central Europe and a summer destination." %}</p>
             </div>
-        </div>
 
-        <!-- Landmark 5: Hungarian Spa -->
-        <div class="holiday-card">
-            <img src="{% static 'images/vista-dall-alto-del-bagno.jpg' %}" alt="Hungarian Spa">
-            <div class="card-content">
-                <h3>{% trans "Thermal Baths" %}</h3>
-                <p>{% trans "Hungary is famous for its medicinal thermal waters and beautiful historic spa buildings." %}</p>
-            </div>
-        </div>
-
-        <!-- Landmark 6: Opera House -->
-        <!-- Note: Using your filename 'photo1.jpg.jpg' -->
-        <div class="holiday-card">
-            <img src="{% static 'images/opera.jpg' %}" alt="Opera House">
-            <div class="card-content">
-                <h3>{% trans "State Opera House" %}</h3>
-                <p>{% trans "A neo-Renaissance masterpiece known for its incredible acoustics and beauty." %}</p>
-            </div>
         </div>
 
     </div>
+
 </section>
 {% endblock %}

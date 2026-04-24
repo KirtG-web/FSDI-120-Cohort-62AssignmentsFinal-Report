@@ -3,52 +3,51 @@
 {% load i18n %}
 
 {% block content %}
-<section class="about-section">
-    <h2 class="main-page-title">{% trans "Holidays & Traditions" %}</h2>
+<section class="page-section">
 
-    <p class="green-cursive-text text-center">
-        {% trans "Hungary has many rich and meaningful holidays that reflect its culture, history, and traditions." %}
-    </p>
+    <!-- ONE MAIN CARD -->
+    <div class="holiday-main-card">
 
-    <!-- 2-Column Grid -->
-    <div class="holiday-grid">
+        <!-- TITLE -->
+        <h2 class="holiday-title">
+            {% trans "Holidays & Traditions" %}
+        </h2>
 
-        <!-- Card 1 -->
-        <div class="holiday-card">
-            <img src="{% static 'images/christmas.jpg' %}" alt="Christmas">
-            <div class="card-content">
-                <h3>{% trans "Christmas" %}</h3>
-                <p>{% trans "A time for family gatherings, traditional foods, and festive celebrations across Hungary." %}</p>
-            </div>
-        </div>
+        <!-- SUBTITLE -->
+        <p class="holiday-subtitle">
+            {% trans "Hungary celebrates a rich mix of national holidays and cultural traditions throughout the year." %}
+        </p>
 
-        <!-- Card 2 -->
-        <div class="holiday-card">
-            <img src="{% static 'images/easter.jpg' %}" alt="Easter">
-            <div class="card-content">
-                <h3>{% trans "Easter" %}</h3>
-                <p>{% trans "Celebrated with unique traditions like 'watering' and colorful folk customs." %}</p>
-            </div>
-        </div>
+        <!-- GRID -->
+        <div class="holiday-grid">
 
-        <!-- Card 3 -->
-        <div class="holiday-card">
-            <img src="{% static 'images/st_stephens_day.jpg' %}" alt="St. Stephen’s Day">
-            <div class="card-content">
+            <div class="holiday-item">
                 <h3>{% trans "St. Stephen’s Day" %}</h3>
-                <p>{% trans "A national holiday celebrating Hungary’s founding with fireworks and celebrations." %}</p>
+                <img src="{% static 'images/st_stephens_day.jpg' %}">
+                <p>{% trans "Celebrated on August 20th, honoring Hungary’s first king with fireworks and festivals." %}</p>
             </div>
-        </div>
 
-          <!-- Holiday 4: Name Days -->
-        <div class="holiday-card">
-            <img src="{% static 'images/name days.jpg' %}" alt="{% trans 'Hungarian Name Days' %}">
-            <div class="card-content">
-                <h3>{% trans "Name Days" %}</h3>
-                <p>{% trans "In Hungary, name days are celebrated almost as much as birthdays, with each name assigned to a specific day of the year." %}</p>
+            <div class="holiday-item">
+                <h3>{% trans "March 15th" %}</h3>
+                <img src="{% static 'images/national_day.jpg' %}">
+                <p>{% trans "Commemorates the 1848 Revolution with speeches, parades, and national pride." %}</p>
             </div>
+
+            <div class="holiday-item">
+                <h3>{% trans "Easter Traditions" %}</h3>
+                <img src="{% static 'images/easter.jpg' %}">
+                <p>{% trans "Known for the unique tradition of 'sprinkling,' where men sprinkle women with water or perfume." %}</p>
+            </div>
+
+            <div class="holiday-item">
+                <h3>{% trans "Christmas Markets" %}</h3>
+                <img src="{% static 'images/christmas.jpg' %}">
+                <p>{% trans "Festive markets filled with lights, crafts, and traditional Hungarian foods." %}</p>
+            </div>
+
         </div>
 
     </div>
+
 </section>
 {% endblock %}
