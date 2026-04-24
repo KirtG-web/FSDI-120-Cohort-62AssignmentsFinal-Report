@@ -13,7 +13,11 @@ SECRET_KEY = 'django-insecure-...'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '.onrender.com'
+]
 
 
 # =====================
@@ -35,6 +39,7 @@ INSTALLED_APPS = [
 # =====================
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
 
     # required for language switching
@@ -122,6 +127,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 # =====================
 # EMAIL (SMTP - Gmail)
@@ -135,3 +142,4 @@ EMAIL_HOST_USER = 'kirtdgerman13f@gmail.com'
 EMAIL_HOST_PASSWORD = 'your-app-password-here'  # move to .env in production
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
