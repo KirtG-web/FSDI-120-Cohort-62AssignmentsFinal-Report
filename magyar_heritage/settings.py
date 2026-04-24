@@ -1,3 +1,4 @@
+import os
 """
 Django settings for magyar_heritage project.
 """
@@ -9,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # =====================
 # SECURITY
 # =====================
-SECRET_KEY = 'django-insecure-...'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = False
 
