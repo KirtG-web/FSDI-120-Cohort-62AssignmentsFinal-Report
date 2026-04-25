@@ -1,8 +1,4 @@
 import os
-"""
-Django settings for magyar_heritage project.
-"""
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -10,16 +6,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # =====================
 # SECURITY
 # =====================
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-dev-key")
 
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '.onrender.com'
+    "localhost",
+    "127.0.0.1",
+    ".onrender.com"
 ]
-
 
 # =====================
 # APPLICATIONS
@@ -34,18 +29,15 @@ INSTALLED_APPS = [
     'main',
 ]
 
-
 # =====================
 # MIDDLEWARE
 # =====================
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
 
-    # required for language switching
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
 
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -53,9 +45,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-
 ROOT_URLCONF = 'magyar_heritage.urls'
-
 
 # =====================
 # TEMPLATES
@@ -63,7 +53,7 @@ ROOT_URLCONF = 'magyar_heritage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # optional: BASE_DIR / "templates"
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,9 +66,7 @@ TEMPLATES = [
     },
 ]
 
-
 WSGI_APPLICATION = 'magyar_heritage.wsgi.application'
-
 
 # =====================
 # DATABASE
@@ -90,7 +78,6 @@ DATABASES = {
     }
 }
 
-
 # =====================
 # PASSWORD VALIDATION
 # =====================
@@ -101,13 +88,12 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-
 # =====================
-# INTERNATIONALIZATION (EN + HU ONLY)
+# INTERNATIONALIZATION
 # =====================
 USE_I18N = True
 
-LANGUAGE_CODE = 'en'   # default language
+LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('en', 'English'),
@@ -117,7 +103,6 @@ LANGUAGES = [
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
-
 
 # =====================
 # STATIC FILES
@@ -140,8 +125,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = 'kirtdgerman13f@gmail.com'
-EMAIL_HOST_PASSWORD = 'your-app-password-here'  # move to .env in production
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 

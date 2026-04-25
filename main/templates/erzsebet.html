@@ -7,13 +7,12 @@
 
     <div class="profile-card">
 
-        <!-- NAME INSIDE CARD -->
         <h2 class="profile-title">
             {% trans "Erzsébet Bérczi German" %}
         </h2>
 
-        <img src="{% static 'images/erzsebet.jpg' %}" 
-             alt="{% trans 'Erzsébet Bérczi German' %}" 
+        <img src="{% static 'images/erzsebet.jpg' %}"
+             alt="{% trans 'Erzsébet Bérczi German' %}"
              class="profile-image">
 
         <p class="profile-text">
@@ -26,7 +25,7 @@
 
         <!-- VIDEO -->
         <div class="video-container">
-            <video controls>
+            <video controls width="100%">
                 <source src="{% static 'videos/erzsebet.mp4' %}" type="video/mp4">
                 {% trans "Your browser does not support the video tag." %}
             </video>
