@@ -17,16 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
-from django.contrib.auth import views as auth_views
+from django.views.generic import RedirectView
 
-# Non-localized URLs (Language switcher and Admin)
 urlpatterns = [
+    path('', RedirectView.as_view(url='/en/', permanent=True)),
     path('admin/', admin.site.urls),
-    path('i18n/', include('django.conf.urls.i18n')), # Standard way to handle set_language
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
 
-# Localized URLs (Prefixed with /en/, /hu/, etc.)
 urlpatterns += i18n_patterns(
-    path('', include('main.urls')), 
-   
+    path('', include('main.urls')),
 )

@@ -1,6 +1,48 @@
-db.sqlite3
-*.pyc
+# =====================
+# Python
+# =====================
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =====================
+# Virtual environment
+# =====================
 .venv/
+venv/
+
+# =====================
+# Django
+# =====================
+db.sqlite3
+*.log
+
+# Django migrations (optional but recommended if solo project)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# =====================
+# Environment variables
+# =====================
 .env
+
+# =====================
+# Static files (IMPORTANT)
+# =====================
+staticfiles/
+
+# If you're generating media/uploads (optional)
+media/
+
+# =====================
+# IDE / OS
+# =====================
+.vscode/
+.idea/
+.DS_Store
+
+# =====================
+# Your custom ignores
+# =====================
 static/videos/
